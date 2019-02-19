@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+	<%= user.name %>
+	<%= user.image %>
+	<%= user.passion %>
+	<% if user.name=="matsuoka" %>
+		<%= link_to "Matsuoka", user_matsuoka_path %>
+	<% elsif user.name=='tatsuya' %>
+		<%= link_to "Tatsuya", user_tatsuya_path %>
+	<% end %>
+<% end %>
