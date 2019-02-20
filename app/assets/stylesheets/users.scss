@@ -1,3 +1,37 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	text-align: center;
+	font-family: serif;
+	font-size: 30px;
+	color: white;
+	background-image: url("passion.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.factor{
+		display: inline-block;
+		text-align: center;
+		padding: 210px;
+		a{
+			color: white;
+			width: 100px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border: 2px solid;
+			border-color:#aaaaaa #444444 #444444 #aaaaaa;
+			background:#cccccc;
+			text-decoration: none;
+		}
+		a:hover{
+			background:#777777;
+		}
+	}
+	.discription{
+		font-size:26px;
+	}
+	.sab-discription{
+		font-size:26px;
+	}
+}

@@ -1,10 +1,14 @@
 <% @users.each do |user| %>
-	<div class="name"><%= user.name %></div>
-	<%= image_tag "#{user.image}", :size =>'200x200' %>
-	<div class="passion"><%= user.passion %></div>
-	<% if user.name=="matsuoka" %>
-		<%= link_to "Matsuoka", user_matsuoka_path %>
-	<% elsif user.name=='tatsuya' %>
-		<%= link_to "Tatsuya", user_tatsuya_path %>
-	<% end %>
+	<div class="factor">
+		<div class="name"><%= user.name %></div>
+		<div class="image"><%= image_tag "#{user.image}", :size =>'200x200' %></div>
+		<div class="passion"><%= " 情熱ポイント#{user.passion}" %></div>
+		<% if user.name=="matsuoka" %>
+			<%= link_to "Matsuoka", user_matsuoka_path %>
+		<% elsif user.name=='tatsuya' %>
+			<%= link_to "Tatsuya", user_tatsuya_path %>
+		<% end %>
+	</div>
 <% end %>
+<div class="discription">これはTatsuyaのLife is techに対する情熱と、松岡修造の情熱をポイントとして可視化したアプリケーションです。</div>
+<div class="sab-discription">ボタンを押すと情熱を追加できます。(現在のポイントはTatsuyaと松岡修造が実際に情熱をクリックしたとかどうとか。。。)</div>
