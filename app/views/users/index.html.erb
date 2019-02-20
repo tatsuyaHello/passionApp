@@ -3,10 +3,10 @@
 		<div class="name"><%= user.name %></div>
 		<div class="image"><%= image_tag "/assets/#{user.image}", :size =>'200x200' %></div>
 		<div class="passion"><%= " 情熱ポイント#{user.passion}" %></div>
-		<% if user.name=="matsuoka" %>
-			<%= link_to "Matsuoka", user_matsuoka_path %>
-		<% elsif user.name=="tatsuya" %>
+		<% if user.name=="tatsuya" %>
 			<%= link_to "Tatsuya", user_tatsuya_path %>
+		<% elsif user.name=="matsuoka" %>
+			<%= link_to "Matsuoka", user_matsuoka_path %>
 		<% end %>
 	</div>
 <% end %>
