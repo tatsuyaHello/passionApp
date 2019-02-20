@@ -1,7 +1,7 @@
 <% @users.each do |user| %>
-	<%= user.name %>
-	<%= user.image %>
-	<%= user.passion %>
+	<div class="name"><%= user.name %></div>
+	<%= image_tag "#{user.image}", :size =>'200x200' %>
+	<div class="passion"><%= user.passion %></div>
 	<% if user.name=="matsuoka" %>
 		<%= link_to "Matsuoka", user_matsuoka_path %>
 	<% elsif user.name=='tatsuya' %>
